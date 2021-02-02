@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch dockers",
+      "type": "node",
+      "request": "attach",
+      "preLaunchTask": "docker-start",
+      "protocol": "inspector",
+    },
+    {
+      "name": "Launch UI",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4000/"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Launch app",
+      "configurations": [
+        "Launch dockers",
+        "Launch UI"
+      ]
+    }
+  ]
+}

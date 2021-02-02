@@ -1,0 +1,15 @@
+# Enviroment
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+
+# Proyect folders
+.git
+.vscode
+dist
+test
+e2e
+
+# Docker mysql data
+.data
